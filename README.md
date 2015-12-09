@@ -1,3 +1,13 @@
-Python script that generates a JS object from <option> tags within a <select> tag in an HTML file
+Python script that generates a JS array of objects  from option tags within a select tag in an HTML file
 
-User inputs the id of the select element and the name of output JS file
+Input: id of the select menu, name of output JS file
+
+Output: JS file with containing an array of objects with format:
+
+var {object_name} = [
+	{abbr: "{abbr}", {id}: "{option_text}"}.
+	...
+
+]
+
+Useful for selecting the value and inner text of all option tags in a select list
