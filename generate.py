@@ -21,7 +21,7 @@ options = selects.find_all("option")
 
 #loop through each option tag
 for option in options:
-	output.write("\t{abbr: \"" + str(option['value'])+ "\"," + select_element + ":\"" + str(option.string) + "\"},\n ")
+	output.write("\t{value: \"" + str(option['value'])+ "\"," + select_element + ":\"" + str(option.string) + "\"},\n ")
 
 
 output.write("];")
